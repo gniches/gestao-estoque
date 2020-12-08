@@ -5,5 +5,6 @@ export class Estoque {
 
     adicionar(value) {
         this.estoque.push(value);
+
     }
 }

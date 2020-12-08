@@ -70,9 +70,27 @@
 	<section id="app-page">
 		<div class="page-header">
 			<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg navbar-light bg-success d-flex">
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					  
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="./images/user_profile_avatar.png" class="rounded-circle" alt="user_profile">
+						  </a>
+						  <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdownMenuLink" id="dropdownMenu">
+							<a class="dropdown-item" href="#" id="dashboard-option">Dashboard</a>
+							<a class="dropdown-item" href="#" id="edit-profile-option">Editar Perfil</a>
+							<a type="button" class="dropdown-item" href="#" id="botao-saida">Sair</a>
+						  </div>
+						</li>
+					  </ul>
+					</div>
+				  </nav>
 				<h1 id="title-page-2">
 					Cadastro de produto
 				</h1>
+				
 			</div>
 		</div>
 	<hr>
@@ -83,13 +101,13 @@
 					<div class="col-sm-3">
 						<div class="form-group">
 							<label for="input-produto-nome">Nome</label>
-							<input id="input-produto-nome" type="text" class="form-control" placeholder="Nome" />
+							<input id="nome" type="text" class="form-control" placeholder="Nome" />
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="form-group">
-							<label for="input-produto-estoque">Código do Produto</label>
-							<input id="input-produto-estoque" type="text" class="form-control" placeholder="Código" />
+							<label for="input-produto-codigo">Código do Produto</label>
+							<input id="codigo" type="text" class="form-control" placeholder="Código" />
 						</div>
 					</div>
 				</div>
@@ -97,7 +115,7 @@
 					<div class="col-sm-6">
 						<div class="form-group">
 							<label for="input-produto-descricao">Descrição</label>
-							<textarea id="input-produto-descricao" rows="3" class="form-control"
+							<textarea id="descricao" rows="3" class="form-control"
 								placeholder="Descrição do produto"></textarea>
 						</div>
 					</div>
@@ -106,14 +124,14 @@
 					<div class="col-sm-3">
 						<div class="form-group">
 							<label for="input-produto-preco">Preço unitário</label>
-							<input id="input-produto-preco" type="text" class="form-control" placeholder="R$" />
+							<input id="preco" type="text" class="form-control" placeholder="R$" />
 						</div>
 					</div>
 
 					<div class="col-sm-3">
 						<div class="form-group">
 							<label for="input-produto-estoque">Estoque</label>
-							<input id="input-produto-estoque" type="text" class="form-control" placeholder="Unidades" />
+							<input id="quantidade" type="text" class="form-control" placeholder="Unidades" />
 						</div>
 					</div>
 
@@ -121,22 +139,25 @@
 
 				<!--<div class="row"></div>-->
 					<div class="form-group" id="buttons">
-						<button class="btn  btn-primary" type="submit">Salvar</button>
-						<button class="btn  btn-danger" type="submit">Excluir</button>
-						<!--<a href="#" class="btn  btn-link  aw-btn-link-danger" onclick="excluir()">Excluir este produto</a>-->
+						<button class="btn  btn-primary" type="button" id="cadastrar">Cadastrar</button>						
 					</div>
 				
 			</form>
+			<hr>
+			<div id="mostrar-produto" class="row">
+
+			</div>
 		</div>
 
 
 	</section>
-
+	
+  	
 	<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../vendor/bootstrap/js/popper.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 	<!--===============================================================================================-->
 	<script src="./bundle.js"></script>
 </body>

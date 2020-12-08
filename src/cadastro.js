@@ -4,7 +4,6 @@ export class Cadastro {
         this.descricao = descricao;
         this.quantidade = quantidade;
         this.preco = preco;
-        this.codigo = codigo;
-        
+        this.codigo = codigo;        
     }
 }
